@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord of the Rings Card</title>
+</head>
+<body>
+    <h1>Dettagli del Personaggio</h1>
+    <div id="cardDetails">
+        <p id="characterName"></p>
+        <img id="characterImage" src="" alt="Character Image">
+    </div>
+
+    <script>
+        fetch('https://ringsdb.com/api/public/cards/random')
+        .then(response => response.json())
+        .then(data => {
+            const characterName = data.name;
+            const characterImageURL = 'https://ringsdb.com' + data.imagesrc;
+            document.getElementById('characterName').textContent = characterName;
+            document.getElementById('characterImage').src = characterImageURL;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
+

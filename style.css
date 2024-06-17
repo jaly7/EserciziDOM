@@ -1,0 +1,38 @@
+/* Stile del container */
+.container {
+    max-width: 1200px; /* Larghezza massima del container */
+    margin: 0 auto; /* Centrare il container orizzontalmente */
+    padding: 20px; /* Spazio interno al container */
+  }
+  
+  /* Stile delle card */
+  .card {
+    background-color: #f9f9f9; /* Colore di sfondo delle card */
+    border-radius: 8px; /* Bordi arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra */
+    padding: 20px; /* Spazio interno alla card */
+    margin-bottom: 20px; /* Spazio tra le card */
+  }
+  
+  /* Stile del titolo della card */
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Stile del contenuto della card */
+  .card-content {
+    font-size: 16px;
+  }
+  
+  /* Stile del link nella card */
+  .card-link {
+    color: #007bff; /* Colore del link */
+    text-decoration: none; /* Rimuovere la sottolineatura */
+  }
+  
+  .card-link:hover {
+    text-decoration: underline; /* Sottolineatura al passaggio del mouse */
+  }
+  
